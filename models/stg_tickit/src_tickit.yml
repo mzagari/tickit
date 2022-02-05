@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: tickit
+    database: tickit-340319
+    schema: tickit
+    tables:
+      - name: sales
+      - name: date2008
