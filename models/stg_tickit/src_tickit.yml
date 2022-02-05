@@ -7,3 +7,8 @@ sources:
     tables:
       - name: sales
       - name: date2008
+      - name: event
+      - name: venue
+      - name: category
+      - name: users
+      - name: listings
