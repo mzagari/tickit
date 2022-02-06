@@ -1,4 +1,4 @@
 SELECT
-    eventid, buyerid, dateid, saletime, commission
+    salesid, eventid, buyerid, dateid, saletime, commission
 
 FROM {{ source('tickit', 'sales') }}
