@@ -4,11 +4,19 @@ sources:
   - name: tickit
     database: tickit-340319
     schema: tickit
+    description: Raw dataset in BigQuery used to build each staging model in dbt
     tables:
       - name: sales
+        description: Raw data for each distinct ticket sales event
       - name: date2008
+        description: Raw data for each distinct Julian date's metadata
       - name: event
+        description: Raw data for each distinct event for which tickets were listed or sold
       - name: venue
+        description: Raw data for each distinct venue at which events occurred
       - name: category
+        description: Raw data for each distinct category type used to classify every event
       - name: users
+        description: Raw data for every distinct user in the dataset
       - name: listings
+        description: Raw data for each distinct ticket listing event

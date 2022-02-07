@@ -2,44 +2,58 @@ version: 2
 
 models:
   - name: stg_category
+    description: Taxonomy of event type, eg, musical, concert, etc
     columns: 
       - name: catid
+        description: Primary key for each category of event
         tests:
           - unique
           - not_null
   - name: stg_date2008
+    description: Creates meta data for each distinct day in 2008 (eg, the week of the year, quarter, etc)
     columns:
       - name: dateid
+        decription: Primary key for each distinct date, represented by the Julian date
         tests:
           - unique
           - not_null
   - name: stg_event
+    description: Describes each unique event in the data
     columns: 
       - name: eventid
+        description: Primary key for each distinct event
         tests:
           - unique
           - not_null
   - name: stg_listings
+    description: Data for each listing created by a user
     columns:
       - name: listid
+        description: Primary key for each distinct listing by a user
         tests:
           - unique
           - not_null
   - name: stg_sales
+    description: Data for each ticket sale that occurred
     columns: 
       - name: salesid
+        description: Primary key for each distinct sale event
         tests:
           - unique
           - not_null
   - name: stg_users
+    description: Attributes for each unique user in the dataset
     columns:
       - name: userid
+        description: Primary key for each distinct user
         tests:
           - unique
           - not_null
   - name: stg_venue
+    description: Attributes for each unique venue at which events occurred
     columns: 
       - name: venueid
+        description: Primary key for each distinct venue
         tests:
           - unique
           - not_null   
